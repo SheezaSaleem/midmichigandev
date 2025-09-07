@@ -11,11 +11,13 @@ const Services = () => {
 
   return (
     <div className="container">
-      <h1 style={{ marginTop: 350 }}>Everyone Deserves Our Best Services</h1>
+      <h1 style={{ marginTop: 200 }}>
+        Everyone Deserves Our Best Services
+      </h1>
       <Row className="mt-5 mb-5">
         <Col lg={3} sm={12}>
           <Card
-            className="d-flex justify-content-center align-items-center shadow border-0"
+            className="d-flex justify-content-center align-items-center shadow border-0 mt-5"
             style={{ width: "100%" }}
           >
             <div className="mt-5 mb-4" style={{ position: "relative" }}>
@@ -59,7 +61,7 @@ const Services = () => {
 
         <Col lg={3} sm={12}>
           <Card
-            className="d-flex justify-content-center align-items-center shadow border-0"
+            className="d-flex justify-content-center align-items-center shadow border-0 mt-5"
             style={{ width: "100%" }}
           >
             <div className="mt-5 mb-4" style={{ position: "relative" }}>
@@ -103,7 +105,7 @@ const Services = () => {
 
         <Col lg={3} sm={12}>
           <Card
-            className="d-flex justify-content-center align-items-center shadow border-0"
+            className="d-flex justify-content-center align-items-center shadow border-0 mt-5"
             style={{ width: "100%" }}
           >
             <div className="mt-5 mb-4" style={{ position: "relative" }}>
@@ -137,8 +139,9 @@ const Services = () => {
             <Card.Body>
               <Card.Title className="poppins-bold">Bridge Program</Card.Title>
               <Card.Text className="mt-3 mb-4" style={{ fontSize: 15 }}>
-                The Bridge Program is a patient centered resource that mainly focuses
-                on bridging the gap between home health and hospice care.
+                The Bridge Program is a patient centered resource that mainly
+                focuses on bridging the gap between home health and hospice
+                care.
               </Card.Text>
             </Card.Body>
           </Card>
@@ -146,7 +149,7 @@ const Services = () => {
 
         <Col lg={3} sm={12}>
           <Card
-            className="d-flex justify-content-center align-items-center shadow border-0"
+            className="d-flex justify-content-center align-items-center shadow border-0 mt-5"
             style={{ width: "100%" }}
           >
             <div className="mt-5 mb-4" style={{ position: "relative" }}>
@@ -174,12 +177,12 @@ const Services = () => {
                   top: 1,
                 }}
               >
-                <FaStethoscope  size={40} color="white" />
+                <FaStethoscope size={40} color="white" />
               </div>
             </div>
             <Card.Body>
               <Card.Title className="poppins-bold">Hospice</Card.Title>
-              <Card.Text className="mt-3 mb-4" style={{fontSize: 15}}>
+              <Card.Text className="mt-3 mb-4" style={{ fontSize: 15 }}>
                 Hospice is a compassionate, patient-centered approach to medical
                 care and support for patients and families facing end-of-life
                 issues.

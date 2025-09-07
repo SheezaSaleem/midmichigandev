@@ -1,6 +1,15 @@
 .btn-letstalk {
-  width: '30%';
+  width: "30%";
   height: 45;
-  border-radius: '100%';
-  background-color: '#D6575A';
+  border-radius: "100%";
+  background-color: "#D6575A";
+}
+
+.sliderBorderImage {
+  height: "100%";
+  position: "absolute";
+  width: "100%";
+  left: 0;
+  bottom: -30;
+  z-index: -10;
 }

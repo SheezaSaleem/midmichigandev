@@ -31,9 +31,9 @@ const AboutUs = () => {
             of amenities that allow them to feel independent.
           </p>
 
-          <Row style={{width: isDesktopOrLaptop ? '90%' : '100%'}}>
+          <Row style={{ width: isDesktopOrLaptop ? "90%" : "100%" }}>
             <Col md={6} sm={12}>
-              <p style={{fontSize: 15}}>
+              <p style={{ fontSize: 15 }}>
                 <FaCircleCheck
                   color="rgba(214, 87, 90, 0.5)"
                   style={{ marginRight: 10 }}
@@ -42,7 +42,7 @@ const AboutUs = () => {
               </p>
             </Col>
             <Col md={6} sm={12}>
-              <p style={{fontSize: 15}}>
+              <p style={{ fontSize: 15 }}>
                 <FaCircleCheck
                   color="rgba(214, 87, 90, 0.5)"
                   style={{ marginRight: 10 }}
@@ -51,9 +51,9 @@ const AboutUs = () => {
               </p>
             </Col>
           </Row>
-          <Row style={{width: isDesktopOrLaptop ? '90%' : '100%'}}>
+          <Row style={{ width: isDesktopOrLaptop ? "90%" : "100%" }}>
             <Col md={6} sm={12}>
-              <p style={{fontSize: 15}}>
+              <p style={{ fontSize: 15 }}>
                 <FaCircleCheck
                   color="rgba(214, 87, 90, 0.5)"
                   style={{ marginRight: 10 }}
@@ -62,7 +62,7 @@ const AboutUs = () => {
               </p>
             </Col>
             <Col md={6} sm={12}>
-              <p style={{fontSize: 15}}>
+              <p style={{ fontSize: 15 }}>
                 <FaCircleCheck
                   color="rgba(214, 87, 90, 0.5)"
                   style={{ marginRight: 10 }}
@@ -104,7 +104,7 @@ const AboutUs = () => {
               </li>
             </ul> */}
         </Col>
-        <Col lg={6} sm={12}>
+        <Col lg={6} sm={12} style={{ overflow: "hidden" }}>
           <Image
             src={require("../../../assets/images/resources/about-3-1.jpg")}
             style={{ borderRadius: 10 }}

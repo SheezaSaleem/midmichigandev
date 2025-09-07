@@ -8,7 +8,7 @@
   pointer-events: none;
 }
 
-*{
+* {
   font-family: "poppins-regular";
 }
 
@@ -45,3 +45,5 @@ body {
     transform: rotate(360deg);
   }
 }
+
+
