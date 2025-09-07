@@ -1,0 +1,63 @@
+@font-face {
+  font-family: poppins-Black;
+  src: url("../fonts/Poppins-Black.ttf");
+}  
+@font-face {
+  font-family: poppins-ExtraBold;
+  src: url("../fonts/Poppins-ExtraBold.ttf");
+}
+@font-face {
+  font-family: poppins-Bold;
+  src: url("../fonts/Poppins-Bold.ttf");
+}
+@font-face {
+  font-family: poppins-SemiBold;
+  src: url("../fonts/Poppins-SemiBold.ttf");
+}
+@font-face {
+  font-family: poppins-Medium;
+  src: url("../fonts/Poppins-Medium.ttf");
+}
+@font-face {
+  font-family: poppins-Regular;
+  src: url("../fonts/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: poppins-Thin;
+  src: url("../fonts/Poppins-Thin.ttf");
+}
+@font-face {
+  font-family: poppins-Light;
+  src: url("../fonts/Poppins-Light.ttf");
+}
+@font-face {
+  font-family: poppins-ExtraLight;
+  src: url("../fonts/Poppins-ExtraLight.ttf");
+}
+.poppins-black{
+  font-family:  poppins-Black;
+}
+.poppins-extraBold{
+  font-family:  poppins-ExtraBold;
+}
+.poppins-bold{
+  font-family:  poppins-Bold;
+}
+.poppins-semiBold{
+  font-family:  poppins-SemiBold;
+}
+.poppins-medium{
+  font-family:  poppins-Medium;
+}
+.poppins-regular{
+  font-family:  poppins-Regular;
+}
+.poppins-thin{
+  font-family:  poppins-Thin;
+}
+.poppins-light{
+  font-family:  poppins-Light;
+}
+.poppins-extraLight{
+  font-family:  poppins-ExtraLight;
+}
