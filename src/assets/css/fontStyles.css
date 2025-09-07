@@ -1,0 +1,101 @@
+@font-face {
+  font-family: baloo2-Bold;
+  src: url("../fonts/Baloo2-Bold.ttf");
+}  
+@font-face {
+  font-family: baloo2-ExtraBold;
+  src: url("../fonts/Baloo2-ExtraBold.ttf");
+}  
+@font-face {
+  font-family: baloo2-Medium;
+  src: url("../fonts/Baloo2-Medium.ttf");
+}  
+@font-face {
+  font-family: baloo2-Regular;
+  src: url("../fonts/Baloo2-Regular.ttf");
+}  
+@font-face {
+  font-family: baloo2-SemiBold;
+  src: url("../fonts/Baloo2-SemiBold.ttf");
+}  
+
+@font-face {
+  font-family: poppins-Black;
+  src: url("../fonts/Poppins-Black.ttf");
+}  
+@font-face {
+  font-family: poppins-ExtraBold;
+  src: url("../fonts/Poppins-ExtraBold.ttf");
+}
+@font-face {
+  font-family: poppins-Bold;
+  src: url("../fonts/Poppins-Bold.ttf");
+}
+@font-face {
+  font-family: poppins-SemiBold;
+  src: url("../fonts/Poppins-SemiBold.ttf");
+}
+@font-face {
+  font-family: poppins-Medium;
+  src: url("../fonts/Poppins-Medium.ttf");
+}
+@font-face {
+  font-family: poppins-Regular;
+  src: url("../fonts/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: poppins-Thin;
+  src: url("../fonts/Poppins-Thin.ttf");
+}
+@font-face {
+  font-family: poppins-Light;
+  src: url("../fonts/Poppins-Light.ttf");
+}
+@font-face {
+  font-family: poppins-ExtraLight;
+  src: url("../fonts/Poppins-ExtraLight.ttf");
+}
+
+.baloo2-extraBold{
+  font-family:  baloo2-ExtraBold;
+}
+.baloo2-bold{
+  font-family:  baloo2-Bold;
+}
+.baloo2-semiBold{
+  font-family:  baloo2-SemiBold;
+}
+.baloo2-medium{
+  font-family:  baloo2-Medium;
+}
+.baloo2-regular{
+  font-family:  baloo2-Regular;
+}
+
+.poppins-black{
+  font-family:  poppins-Black;
+}
+.poppins-extraBold{
+  font-family:  poppins-ExtraBold;
+}
+.poppins-bold{
+  font-family:  poppins-Bold;
+}
+.poppins-semiBold{
+  font-family:  poppins-SemiBold;
+}
+.poppins-medium{
+  font-family:  poppins-Medium;
+}
+.poppins-regular{
+  font-family:  poppins-Regular;
+}
+.poppins-thin{
+  font-family:  poppins-Thin;
+}
+.poppins-light{
+  font-family:  poppins-Light;
+}
+.poppins-extraLight{
+  font-family:  poppins-ExtraLight;
+}
