@@ -1,13 +1,19 @@
 import React, { useContext } from "react";
 import { Button, Card, Carousel, Col, Image, Row } from "react-bootstrap";
 import AppContext from "../../../context/AppContext";
-
+import myborderImage from "../../../assets/images/shapes/slider-bg-curve-1-1.png";
+// import myborderImage from "../../../assets/images/shapes/torn.png";
 const MySlider = () => {
   const { isDesktopOrLaptop } = useContext(AppContext);
 
   return (
-    <div>
-      <Carousel controls={true} fade={true} indicators={false} style={{ position: "relative" }}>
+    <div style={{ position: "relative" }}>
+      <Carousel
+        controls={true}
+        fade={true}
+        indicators={false}
+        style={{ position: "relative" }}
+      >
         <Carousel.Item>
           <Image
             src={require("../../../assets/images/main-slider/main-slider-1-1.jpg")}
@@ -19,31 +25,27 @@ const MySlider = () => {
 
       <Row
         style={{
-          // position: "absolute",
-          // bottom: isDesktopOrLaptop ? -200 : -60,
-          // right: 0,
-          // left: 0,
-          // zIndex: 1,
-
           position: "absolute",
-          bottom: isDesktopOrLaptop ? -200 : 200,
-          // top: isDesktopOrLaptop ? 0 : 100,
-          right: -1,
+          bottom: -100,
+          right: 0,
           left: isDesktopOrLaptop ? 0 : 30,
           zIndex: 1,
+          borderBottom: 100,
         }}
       >
         <Col lg={5} sm={0}></Col>
         <Col lg={7} sm={12}>
           <Card
-            className="mr-1 shadow"
+            className="mr-1 border-0"
             style={{
-              height: isDesktopOrLaptop ? "60vh" : "35vh",
+              height: isDesktopOrLaptop ? "35vh" : "35vh",
               backgroundColor: "rgba(255, 255, 255, 1)",
-              // zIndex: 1
             }}
           >
-            <Card.Body className="d-flex flex-column justify-content-center align-items-start">
+            <Card.Body
+              style={{ position: "relative" }}
+              className="d-flex flex-column justify-content-center align-items-start"
+            >
               {isDesktopOrLaptop ? (
                 <h1 className="poppins-bold" style={{ textAlign: "left" }}>
                   Home Health & Hospice Care
@@ -75,37 +77,17 @@ const MySlider = () => {
               >
                 Let's Talk
               </Button>
-              <svg
+              <Image
+                src={myborderImage}
                 style={{
-                  backgroundRepeat: "no-repeat",
-                  backgroundPositionX: "center",
-                  backgroundPositionY: "center",
-                  backgroundSize: "cover",
-                  width: isDesktopOrLaptop ? 900 : 362,
-                  display: "block",
+                  height: "100%",
                   position: "absolute",
-                  left: isDesktopOrLaptop ? -2 : -1,
-                  bottom: isDesktopOrLaptop ? -130 : -70,
-                  strokeWidth: 0.02,
-                  stroke: "#000",
+                  width: "100%",
+                  left: 0,
+                  bottom: -30,
+                  zIndex: -10,
                 }}
-                viewBox="0 0 100 25"
-                transform="rotate(180)"
-              >
-                <path
-                  height={isDesktopOrLaptop ? 200 : 50}
-                  width={"100%"}
-                  fill="#D6575A"
-                  opacity="0.3"
-                  d="M0 30 V15 Q30 3 60 15 V30z"
-                />
-                <path
-                  height={isDesktopOrLaptop ? 200 : 50}
-                  width={"100%"}
-                  fill="#fff"
-                  d="M0 30 V12 Q30 17 55 12 T100 11 V30z"
-                />
-              </svg>
+              />
             </Card.Body>
           </Card>
         </Col>
