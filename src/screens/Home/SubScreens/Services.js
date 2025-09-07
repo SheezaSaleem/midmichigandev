@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import Container from "react-bootstrap/Container";
-import AppContext from "../../context/AppContext";
+import AppContext from "../../../context/AppContext";
 import { Button, Card, Col, Image, Row } from "react-bootstrap";
 import { FaClinicMedical, FaHospitalUser, FaStethoscope } from "react-icons/fa";
 import { FaHandHoldingMedical } from "react-icons/fa6";

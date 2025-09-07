@@ -2,8 +2,8 @@ import logo from './logo.svg';
 import "./assets/css/fontStyles.css";
 import "./assets/css/HomeStyles.css";
 import './App.css';
-import Home from './screens/Home';
 import { Route, Routes } from 'react-router-dom';
+import Home from './screens/Home/Home';
 import AboutUs from './screens/AboutUs';
 import NotFound from './screens/NotFound';
 

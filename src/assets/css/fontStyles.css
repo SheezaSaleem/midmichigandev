@@ -1,4 +1,25 @@
 @font-face {
+  font-family: baloo2-Bold;
+  src: url("../fonts/Baloo2-Bold.ttf");
+}  
+@font-face {
+  font-family: baloo2-ExtraBold;
+  src: url("../fonts/Baloo2-ExtraBold.ttf");
+}  
+@font-face {
+  font-family: baloo2-Medium;
+  src: url("../fonts/Baloo2-Medium.ttf");
+}  
+@font-face {
+  font-family: baloo2-Regular;
+  src: url("../fonts/Baloo2-Regular.ttf");
+}  
+@font-face {
+  font-family: baloo2-SemiBold;
+  src: url("../fonts/Baloo2-SemiBold.ttf");
+}  
+
+@font-face {
   font-family: poppins-Black;
   src: url("../fonts/Poppins-Black.ttf");
 }  
@@ -34,6 +55,23 @@
   font-family: poppins-ExtraLight;
   src: url("../fonts/Poppins-ExtraLight.ttf");
 }
+
+.baloo2-extraBold{
+  font-family:  baloo2-ExtraBold;
+}
+.baloo2-bold{
+  font-family:  baloo2-Bold;
+}
+.baloo2-semiBold{
+  font-family:  baloo2-SemiBold;
+}
+.baloo2-medium{
+  font-family:  baloo2-Medium;
+}
+.baloo2-regular{
+  font-family:  baloo2-Regular;
+}
+
 .poppins-black{
   font-family:  poppins-Black;
 }

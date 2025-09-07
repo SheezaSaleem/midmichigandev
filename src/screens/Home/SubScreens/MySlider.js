@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { Button, Card, Carousel, Col, Image, Row } from "react-bootstrap";
-import AppContext from "../../context/AppContext";
+import AppContext from "../../../context/AppContext";
 
 const MySlider = () => {
   const { isDesktopOrLaptop } = useContext(AppContext);
@@ -10,7 +10,7 @@ const MySlider = () => {
       <Carousel controls={true} fade={true} indicators={false} style={{ position: "relative" }}>
         <Carousel.Item>
           <Image
-            src={require("../../assets/images/main-slider/main-slider-1-1.jpg")}
+            src={require("../../../assets/images/main-slider/main-slider-1-1.jpg")}
             style={{ height: isDesktopOrLaptop ? "auto" : 400 }}
           />
           {/* <Carousel.Caption style={{ width: "85%" }}></Carousel.Caption> */}
