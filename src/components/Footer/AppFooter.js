@@ -2,8 +2,8 @@ import { useContext } from "react";
 
 import { Col, Container, Image, Row } from "react-bootstrap";
 import { FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
-import AppContext from "../../../context/AppContext";
-import footerBorderImage from "../../../assets/images/shapes/scratch-2-1.png";
+import footerBorderImage from "../../assets/images/shapes/scratch-2-1.png";
+import AppContext from "../../context/AppContext";
 
 const AppFooter = () => {
   const { isDesktopOrLaptop } = useContext(AppContext);

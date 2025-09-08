@@ -26,12 +26,12 @@ const CustomNavbar = () => {
         <Navbar.Toggle style={{border: "none"}} aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link className="mx-3" href="#link">Home Health</Nav.Link>
-            <Nav.Link className="mx-3" href="#link">Palliative</Nav.Link>
-            <Nav.Link className="mx-3" href="#link">Bridge Program</Nav.Link>
-            <Nav.Link className="mx-3" href="#link">Hospice</Nav.Link>
-            <Nav.Link className="mx-3" href="#link">Hospice Criteria</Nav.Link>
-            <Nav.Link className="mx-3" href="#link">Career</Nav.Link>
+            <Nav.Link className="mx-3 poppins-bold" href="#link">Home Health</Nav.Link>
+            <Nav.Link className="mx-3 poppins-bold" href="#link">Palliative</Nav.Link>
+            <Nav.Link className="mx-3 poppins-bold" href="#link">Bridge Program</Nav.Link>
+            <Nav.Link className="mx-3 poppins-bold" href="#link">Hospice</Nav.Link>
+            <Nav.Link className="mx-3 poppins-bold" href="#link">Hospice Criteria</Nav.Link>
+            <Nav.Link className="mx-3 poppins-bold" href="#link">Career</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

@@ -7,20 +7,19 @@ const AboutUs = () => {
   const { isDesktopOrLaptop } = useContext(AppContext);
 
   return (
-    <Container className="py-5">
+    <Container className="py-5" style={{marginTop: 120}}>
       <Row>
         <Col lg={6} sm={12}>
-          <h5 className="my-3">About Us</h5>
+          <h5 className="my-3 baloo2-bold" style={{color: '#D6575A'}}>About Us</h5>
           <h1
             style={{ width: isDesktopOrLaptop ? "75%" : "100%" }}
-            className="my-4 baloo2-bold"
+            className="my-4 baloo2-extraBold"
           >
             Best Home Care Center with Love
           </h1>
           <p
             className="mb-5"
             style={{
-              letterSpacing: 1,
               color: "#93959E",
               width: isDesktopOrLaptop ? "80%" : "100%",
             }}
@@ -71,38 +70,6 @@ const AboutUs = () => {
               </p>
             </Col>
           </Row>
-          {/* <ul style={{ listStyle: "none" }}>
-              <li style={{ color: "#2D2929" }}>
-                <FaCircleCheck
-                  color="rgba(214, 87, 90, 0.5)"
-                  style={{ marginRight: 10 }}
-                />
-                In-House Theater
-              </li>
-              <li style={{ color: "#2D2929" }}>
-                <FaCircleCheck
-                  color="rgba(214, 87, 90, 0.5)"
-                  style={{ marginRight: 10 }}
-                />
-                On-Site Physician Services
-              </li>
-            </ul>
-            <ul style={{ listStyle: "none" }}>
-              <li style={{ color: "#2D2929" }}>
-                <FaCircleCheck
-                  color="rgba(214, 87, 90, 0.5)"
-                  style={{ marginRight: 10 }}
-                />
-                Medication Management
-              </li>
-              <li style={{ color: "#2D2929" }}>
-                <FaCircleCheck
-                  color="rgba(214, 87, 90, 0.5)"
-                  style={{ marginRight: 10 }}
-                />
-                Convenient One-Story Design
-              </li>
-            </ul> */}
         </Col>
         <Col lg={6} sm={12} style={{ overflow: "hidden" }}>
           <Image

@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { Button, Card, Carousel, Col, Image, Row } from "react-bootstrap";
 import AppContext from "../../../context/AppContext";
 import myborderImage from "../../../assets/images/shapes/slider-bg-curve-1-1.png";
-// import myborderImage from "../../../assets/images/shapes/torn.png";
+
 const MySlider = () => {
   const { isDesktopOrLaptop } = useContext(AppContext);
 
@@ -43,24 +43,20 @@ const MySlider = () => {
             }}
           >
             <Card.Body
-              style={{ position: "relative" }}
-              className="d-flex flex-column justify-content-center align-items-start"
+              style={{ position: "relative", width: isDesktopOrLaptop ? '75%' : '' }}
+              className="px-5 pt-5 d-flex flex-column justify-content-center align-items-start"
             >
               {isDesktopOrLaptop ? (
-                <h1 className="poppins-bold" style={{ textAlign: "left" }}>
-                  Home Health & Hospice Care
+                <h1 className="baloo2-bold" style={{  }}>
+                  Finding the Best Senior Care Services
                 </h1>
               ) : (
-                <h4 className="poppins-bold" style={{ textAlign: "left" }}>
-                  Home Health & Hospice Care
+                <h4 className="baloo2-bold" style={{  }}>
+                  Finding the Best Senior Care Services
                 </h4>
               )}
               <Card.Text
-                style={{
-                  textAlign: "left",
-                  marginTop: isDesktopOrLaptop ? 30 : 10,
-                  marginBottom: isDesktopOrLaptop ? 30 : 10,
-                }}
+                className="mb-3"
               >
                 We strive to empower the patient and family by providing them
                 with the tools, information, and assistance they need to make
