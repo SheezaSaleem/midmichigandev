@@ -11,8 +11,14 @@ const Services = () => {
 
   return (
     <div className="container">
-      <h1 style={{ marginTop: 200 }}>
-        Everyone Deserves Our Best Services
+      <h5
+        style={{ marginTop: 300, color: "#D6575A" }}
+        className="baloo2-extraBold text-center"
+      >
+        Services
+      </h5>
+      <h1 className="baloo2-extraBold text-center">
+        Everyone Deserves Our <br /> Best Services
       </h1>
       <Row className="mt-5 mb-5">
         <Col lg={3} sm={12}>
@@ -21,8 +27,8 @@ const Services = () => {
             style={{ width: "100%" }}
           >
             <div className="mt-5 mb-4" style={{ position: "relative" }}>
-              <div
-                className="d-flex justify-content-center align-items-center"
+              <div 
+                claBVb
                 style={{
                   height: 100,
                   width: 100,
@@ -48,8 +54,8 @@ const Services = () => {
                 <FaClinicMedical size={40} color="white" />
               </div>
             </div>
-            <Card.Body>
-              <Card.Title className="poppins-bold">Home Health</Card.Title>
+            <Card.Body className="text-center">
+              <Card.Title className="baloo2-bold">Home Health</Card.Title>
               <Card.Text className="mt-3 mb-4" style={{ fontSize: 15 }}>
                 Providing the elderly, those with disabilities, injury or
                 illness the option to remain at home safely. We are here to
@@ -92,7 +98,7 @@ const Services = () => {
                 <FaHandHoldingMedical size={40} color="white" />
               </div>
             </div>
-            <Card.Body>
+            <Card.Body className="text-center">
               <Card.Title className="poppins-bold">Palliative</Card.Title>
               <Card.Text className="mt-3 mb-4" style={{ fontSize: 15 }}>
                 Palliative helps you gain the strength to carry on and helps you
@@ -136,7 +142,7 @@ const Services = () => {
                 <FaHospitalUser size={40} color="white" />
               </div>
             </div>
-            <Card.Body>
+            <Card.Body className="text-center">
               <Card.Title className="poppins-bold">Bridge Program</Card.Title>
               <Card.Text className="mt-3 mb-4" style={{ fontSize: 15 }}>
                 The Bridge Program is a patient centered resource that mainly
@@ -180,7 +186,7 @@ const Services = () => {
                 <FaStethoscope size={40} color="white" />
               </div>
             </div>
-            <Card.Body>
+            <Card.Body className="text-center">
               <Card.Title className="poppins-bold">Hospice</Card.Title>
               <Card.Text className="mt-3 mb-4" style={{ fontSize: 15 }}>
                 Hospice is a compassionate, patient-centered approach to medical

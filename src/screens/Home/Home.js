@@ -4,7 +4,9 @@ import MySlider from "./SubScreens/MySlider";
 import CustomNavbar from "../../components/Navbar/CustomNavbar";
 import Services from "./SubScreens/Services";
 import AboutUs from "./SubScreens/AboutUs";
-import AppFooter from "./SubScreens/AppFooter";
+import Cta from "./SubScreens/Cta";
+import Testimonials from "./SubScreens/Testimonials";
+import Footer from "../../components/Footer/Footer";
 
 
 const Home = () => {
@@ -14,7 +16,9 @@ const Home = () => {
       <MySlider />
       <Services />
       <AboutUs />
-      <AppFooter />
+      <Cta />
+      <Testimonials />
+      <Footer />
     </MasterLayout>
   );
 };
