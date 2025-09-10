@@ -31,7 +31,7 @@ const CustomNavbar = () => {
             <Nav.Link className="mx-3 poppins-bold" href="/homehealth">
               Home Health
             </Nav.Link>
-            <Nav.Link className="mx-3 poppins-bold" href="#link">
+            <Nav.Link className="mx-3 poppins-bold" href="/palliative">
               Palliative
             </Nav.Link>
             <Nav.Link className="mx-3 poppins-bold" href="#link">

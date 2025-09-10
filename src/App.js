@@ -4,6 +4,7 @@ import { Route, Routes } from 'react-router-dom';
 import Home from './screens/Home/Home';
 import NotFound from './screens/NotFound';
 import HomeHealth from "./screens/HomeHealth/HomeHealth";
+import Palliative from "./screens/Palliative/Palliative";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Routes>
         <Route path='/' element={ <Home /> } />
         <Route path='/homehealth' element={ <HomeHealth /> } />
+        <Route path='/palliative' element={ <Palliative /> } />
         <Route path='*' element={ <NotFound /> } />
       </Routes>
     </div>
