@@ -32,7 +32,11 @@ const CustomNavbar = () => {
             <Nav.Link as={Link} className="mx-3 poppins-bold" to="/homehealth">
               Home Health
             </Nav.Link>
+
             <Nav.Link as={Link} className="mx-3 poppins-bold" to="#link">
+
+            <Nav.Link as={Link} className="mx-3 poppins-bold" to="/palliative">
+
               Palliative
             </Nav.Link>
             <Nav.Link as={Link} className="mx-3 poppins-bold" to="/bridge-program">

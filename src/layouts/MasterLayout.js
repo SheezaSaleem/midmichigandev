@@ -4,6 +4,7 @@ import CustomNavbar from "../components/Navbar/CustomNavbar";
 
 import "../assets/css/style.css";
 import "../assets/css/homeHealthStyles.css";
+import "../assets/css/palliativeStyles.css";
 
 const MasterLayout = ({ children }) => {
   return (

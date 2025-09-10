@@ -7,6 +7,7 @@ import HomeHealth from "./screens/HomeHealth/HomeHealth";
 import BridgeProgram from "./screens/BridgeProgram/BridgeProgram";
 import Hospice from "./screens/Hospice/Hospice";
 import HospiceCriteria from "./screens/Hospice/HospiceCriteria";
+import Palliative from "./screens/Palliative/Palliative";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path='/bridge-program' element={ <BridgeProgram /> } />
         <Route path='/hospice' element={ <Hospice /> } />
         <Route path='/hospice-criteria' element={ <HospiceCriteria /> } />
+        <Route path='/palliative' element={ <Palliative /> } />
         <Route path='*' element={ <NotFound /> } />
       </Routes>
     </div>
