@@ -17,7 +17,7 @@ const StaticHeader = ({ screenName }) => {
         <h1 className="baloo2-extraBold">{screenName}</h1>
         <ul className="headingList">
           <li>
-            <a href="/" className="baloo2-medium liHome">
+            <a href="/" className="liHome">
               Home
             </a>
           </li>

@@ -43,8 +43,11 @@ const HealthCare = () => {
               backgroundColor: "#d6575a",
               border: "none",
               marginTop: 30,
-              // marginBottom: 10,
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center'
             }}
+            href="tel:877-732-9528"
           >
             Call Now
           </Button>
