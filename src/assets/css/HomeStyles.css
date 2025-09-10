@@ -34,6 +34,7 @@
   transform: rotate(15deg);
   align-items: center;
   position: relative;
+  left: 30px;
 }
 .ctaMainCompChild2 {
   display: flex;
@@ -45,8 +46,9 @@
   background-color: #fff;
   transform: none;
   position: absolute;
-  top: 1px;
+  top: 0px;
   font-size: 35px;
+  left: 30px;
 }
 .ctaMainCompChild2TextColor1 {
   color: #ff5e5e;

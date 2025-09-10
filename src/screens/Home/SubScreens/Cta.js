@@ -3,7 +3,7 @@ import { Col, Container, Row } from "react-bootstrap";
 
 const Cta = () => {
   return (
-    <Container className="pt-5 px-5 ctaContainer">
+    <Container fluid className="pt-5 px-5 ctaContainer">
       <Row>
         <Col
           lg={3}

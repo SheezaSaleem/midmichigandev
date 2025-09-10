@@ -16,7 +16,7 @@ const CustomNavbar = () => {
       }}
     >
       <Container>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="/">
           <Image
             src={require("../../assets/images/logo.webp")}
             style={{ height: isDesktopOrLaptop ? 70 : 50 }}

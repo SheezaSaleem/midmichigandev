@@ -55,14 +55,17 @@ const MySlider = () => {
                 informed decisions.
               </Card.Text>
               <Button
-                className="sliderCardButton"
-                // style={{
-                //   width: isDesktopOrLaptop ? "30%" : "50%",
-                //   height: isDesktopOrLaptop ? 55 : 35,
-                //   borderRadius: 150,
-                //   backgroundColor: '#d6575a',
-                //   border: 'none',
-                // }}
+                style={{
+                  width: isDesktopOrLaptop ? "30%" : "50%",
+                  height: isDesktopOrLaptop ? 55 : 35,
+                  borderRadius: 150,
+                  backgroundColor: "#d6575a",
+                  border: "none",
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'center'
+                }}
+                href="tel:877-732-9528"
               >
                 Let's Talk
               </Button>
