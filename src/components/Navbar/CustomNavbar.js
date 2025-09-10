@@ -1,10 +1,6 @@
 import { useContext } from "react";
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
 import AppContext from "../../context/AppContext";
-import { Image } from "react-bootstrap";
+import { Image, Container, Nav, Navbar } from "react-bootstrap";
 
 const CustomNavbar = () => {
   const { isDesktopOrLaptop } = useContext(AppContext);
@@ -21,17 +17,35 @@ const CustomNavbar = () => {
     >
       <Container>
         <Navbar.Brand href="#home">
-          <Image src={require("../../assets/images/logo.webp")} style={{height: isDesktopOrLaptop ? 70 : 50}} />
+          <Image
+            src={require("../../assets/images/logo.webp")}
+            style={{ height: isDesktopOrLaptop ? 70 : 50 }}
+          />
         </Navbar.Brand>
-        <Navbar.Toggle style={{border: "none"}} aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle
+          style={{ border: "none" }}
+          aria-controls="basic-navbar-nav"
+        />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link className="mx-3 poppins-bold" href="#link">Home Health</Nav.Link>
-            <Nav.Link className="mx-3 poppins-bold" href="#link">Palliative</Nav.Link>
-            <Nav.Link className="mx-3 poppins-bold" href="#link">Bridge Program</Nav.Link>
-            <Nav.Link className="mx-3 poppins-bold" href="#link">Hospice</Nav.Link>
-            <Nav.Link className="mx-3 poppins-bold" href="#link">Hospice Criteria</Nav.Link>
-            <Nav.Link className="mx-3 poppins-bold" href="#link">Career</Nav.Link>
+            <Nav.Link className="mx-3 poppins-bold" href="/homehealth">
+              Home Health
+            </Nav.Link>
+            <Nav.Link className="mx-3 poppins-bold" href="#link">
+              Palliative
+            </Nav.Link>
+            <Nav.Link className="mx-3 poppins-bold" href="#link">
+              Bridge Program
+            </Nav.Link>
+            <Nav.Link className="mx-3 poppins-bold" href="#link">
+              Hospice
+            </Nav.Link>
+            <Nav.Link className="mx-3 poppins-bold" href="#link">
+              Hospice Criteria
+            </Nav.Link>
+            <Nav.Link className="mx-3 poppins-bold" href="#link">
+              Career
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

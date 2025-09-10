@@ -11,10 +11,7 @@ const Services = () => {
 
   return (
     <div className="container">
-      <h5
-        style={{ marginTop: 300, color: "#D6575A" }}
-        className="baloo2-extraBold text-center"
-      >
+      <h5 className="baloo2-extraBold text-center servicesShortHeading">
         Services
       </h5>
       <h1 className="baloo2-extraBold text-center">
@@ -22,41 +19,17 @@ const Services = () => {
       </h1>
       <Row className="mt-5 mb-5">
         <Col lg={3} sm={12}>
-          <Card
-            className="d-flex justify-content-center align-items-center shadow border-0 mt-5"
-            style={{ width: "100%" }}
-          >
-            <div className="mt-5 mb-4" style={{ position: "relative" }}>
-              <div 
-                claBVb
-                style={{
-                  height: 100,
-                  width: 100,
-                  borderRadius: 10,
-                  backgroundColor: "rgba(255, 94, 94, 0.4)",
-                  transform: "rotate(15deg)",
-                  alignItems: "center",
-                  position: "relative",
-                }}
-              ></div>
-              <div
-                className="d-flex justify-content-center align-items-center"
-                style={{
-                  height: 100,
-                  width: 100,
-                  borderRadius: 10,
-                  backgroundColor: "#FF5E5E",
-                  transform: "none",
-                  position: "absolute",
-                  top: 1,
-                }}
-              >
+          <Card className="d-flex justify-content-center align-items-center shadow mt-5 serviceCardContainer">
+            <div className="mt-5 mb-4 serviceRotateConainer">
+              <div className="servicesChild1 redCardBgColor"></div>
+              <div className="d-flex justify-content-center align-items-center servicesChild2 redCardColor">
                 <FaClinicMedical size={40} color="white" />
               </div>
             </div>
+
             <Card.Body className="text-center">
               <Card.Title className="baloo2-bold">Home Health</Card.Title>
-              <Card.Text className="mt-3 mb-4" style={{ fontSize: 15 }}>
+              <Card.Text className="mt-3 mb-4 serviceParaText">
                 Providing the elderly, those with disabilities, injury or
                 illness the option to remain at home safely. We are here to
                 offer you a caring hand at home.
@@ -66,41 +39,17 @@ const Services = () => {
         </Col>
 
         <Col lg={3} sm={12}>
-          <Card
-            className="d-flex justify-content-center align-items-center shadow border-0 mt-5"
-            style={{ width: "100%" }}
-          >
-            <div className="mt-5 mb-4" style={{ position: "relative" }}>
-              <div
-                className="d-flex justify-content-center align-items-center"
-                style={{
-                  height: 100,
-                  width: 100,
-                  borderRadius: 10,
-                  backgroundColor: "rgba(249, 183, 63, 0.4)",
-                  transform: "rotate(15deg)",
-                  alignItems: "center",
-                  position: "relative",
-                }}
-              ></div>
-              <div
-                className="d-flex justify-content-center align-items-center"
-                style={{
-                  height: 100,
-                  width: 100,
-                  borderRadius: 10,
-                  backgroundColor: "#F9B73F",
-                  transform: "none",
-                  position: "absolute",
-                  top: 1,
-                }}
-              >
+          <Card className="d-flex justify-content-center align-items-center shadow mt-5 serviceCardContainer">
+            <div className="mt-5 mb-4 serviceRotateConainer">
+              <div className="d-flex justify-content-center align-items-center servicesChild1 yellowCardBgColor"></div>
+              <div className="d-flex justify-content-center align-items-center servicesChild2 yellowCardColor">
                 <FaHandHoldingMedical size={40} color="white" />
               </div>
             </div>
+
             <Card.Body className="text-center">
               <Card.Title className="poppins-bold">Palliative</Card.Title>
-              <Card.Text className="mt-3 mb-4" style={{ fontSize: 15 }}>
+              <Card.Text className="mt-3 mb-4 serviceParaText">
                 Palliative helps you gain the strength to carry on and helps you
                 take more control over your care by improving your understanding
                 of the choices for treatment available.
@@ -110,41 +59,16 @@ const Services = () => {
         </Col>
 
         <Col lg={3} sm={12}>
-          <Card
-            className="d-flex justify-content-center align-items-center shadow border-0 mt-5"
-            style={{ width: "100%" }}
-          >
-            <div className="mt-5 mb-4" style={{ position: "relative" }}>
-              <div
-                className="d-flex justify-content-center align-items-center"
-                style={{
-                  height: 100,
-                  width: 100,
-                  borderRadius: 10,
-                  backgroundColor: "rgba(97, 119, 255, 0.4)",
-                  transform: "rotate(15deg)",
-                  alignItems: "center",
-                  position: "relative",
-                }}
-              ></div>
-              <div
-                className="d-flex justify-content-center align-items-center"
-                style={{
-                  height: 100,
-                  width: 100,
-                  borderRadius: 10,
-                  backgroundColor: "#6177FF",
-                  transform: "none",
-                  position: "absolute",
-                  top: 1,
-                }}
-              >
+          <Card className="d-flex justify-content-center align-items-center shadow mt-5 serviceCardContainer">
+            <div className="mt-5 mb-4 serviceRotateConainer">
+              <div className="d-flex justify-content-center align-items-center servicesChild1 blueCardBgColor"></div>
+              <div className="d-flex justify-content-center align-items-center servicesChild2 blueCardColor">
                 <FaHospitalUser size={40} color="white" />
               </div>
             </div>
             <Card.Body className="text-center">
               <Card.Title className="poppins-bold">Bridge Program</Card.Title>
-              <Card.Text className="mt-3 mb-4" style={{ fontSize: 15 }}>
+              <Card.Text className="mt-3 mb-4 serviceParaText">
                 The Bridge Program is a patient centered resource that mainly
                 focuses on bridging the gap between home health and hospice
                 care.
@@ -154,41 +78,16 @@ const Services = () => {
         </Col>
 
         <Col lg={3} sm={12}>
-          <Card
-            className="d-flex justify-content-center align-items-center shadow border-0 mt-5"
-            style={{ width: "100%" }}
-          >
-            <div className="mt-5 mb-4" style={{ position: "relative" }}>
-              <div
-                className="d-flex justify-content-center align-items-center"
-                style={{
-                  height: 100,
-                  width: 100,
-                  borderRadius: 10,
-                  backgroundColor: "rgba(180, 64, 255, 0.4)",
-                  transform: "rotate(15deg)",
-                  alignItems: "center",
-                  position: "relative",
-                }}
-              ></div>
-              <div
-                className="d-flex justify-content-center align-items-center"
-                style={{
-                  height: 100,
-                  width: 100,
-                  borderRadius: 10,
-                  backgroundColor: "#B440FF",
-                  transform: "none",
-                  position: "absolute",
-                  top: 1,
-                }}
-              >
+          <Card className="d-flex justify-content-center align-items-center shadow mt-5 serviceCardContainer">
+            <div className="mt-5 mb-4 serviceRotateConainer">
+              <div className="d-flex justify-content-center align-items-center servicesChild1 purpleCardBgColor"></div>
+              <div className="d-flex justify-content-center align-items-center servicesChild2 purpleCardColor">
                 <FaStethoscope size={40} color="white" />
               </div>
             </div>
             <Card.Body className="text-center">
               <Card.Title className="poppins-bold">Hospice</Card.Title>
-              <Card.Text className="mt-3 mb-4" style={{ fontSize: 15 }}>
+              <Card.Text className="mt-3 mb-4 serviceParaText">
                 Hospice is a compassionate, patient-centered approach to medical
                 care and support for patients and families facing end-of-life
                 issues.

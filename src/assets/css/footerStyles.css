@@ -1,0 +1,22 @@
+.footerContainer {
+  position: relative;
+  background-color: #1b1d21;
+  margin-top: 100px;
+}
+.footerImage {
+  height: 5%;
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  top: -10px;
+  /* background-repeat: repeat-x; */
+  margin: 0px;
+}
+.footerAbout {
+  color: #93959e;
+}
+.footerIcon {
+  margin-right: 10px;
+  color: #ffffff;
+  font-size: 24px;
+}

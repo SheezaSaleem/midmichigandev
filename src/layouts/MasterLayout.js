@@ -1,14 +1,16 @@
 import React, { useState } from "react";
-import CustomNavbar from "../components/Navbar/CustomNavbar";
-import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
+import CustomNavbar from "../components/Navbar/CustomNavbar";
+
+import "../assets/css/style.css";
+import "../assets/css/homeHealthStyles.css";
 
 const MasterLayout = ({ children }) => {
   return (
     <React.Fragment>
-      {/* <Header /> */}
+      <CustomNavbar />
       {children}
-      {/* <Footer /> */}
+      <Footer />
     </React.Fragment>
   );
 };
