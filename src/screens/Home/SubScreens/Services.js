@@ -48,7 +48,7 @@ const Services = () => {
             </div>
 
             <Card.Body className="text-center">
-              <Card.Title className="poppins-bold">Palliative</Card.Title>
+              <Card.Title className="baloo2-bold">Palliative</Card.Title>
               <Card.Text className="mt-3 mb-4 serviceParaText">
                 Palliative helps you gain the strength to carry on and helps you
                 take more control over your care by improving your understanding
@@ -67,7 +67,7 @@ const Services = () => {
               </div>
             </div>
             <Card.Body className="text-center">
-              <Card.Title className="poppins-bold">Bridge Program</Card.Title>
+              <Card.Title className="baloo2-bold">Bridge Program</Card.Title>
               <Card.Text className="mt-3 mb-4 serviceParaText">
                 The Bridge Program is a patient centered resource that mainly
                 focuses on bridging the gap between home health and hospice
@@ -86,7 +86,7 @@ const Services = () => {
               </div>
             </div>
             <Card.Body className="text-center">
-              <Card.Title className="poppins-bold">Hospice</Card.Title>
+              <Card.Title className="baloo2-bold">Hospice</Card.Title>
               <Card.Text className="mt-3 mb-4 serviceParaText">
                 Hospice is a compassionate, patient-centered approach to medical
                 care and support for patients and families facing end-of-life
