@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import AppContext from "../../context/AppContext";
 import { Image, Container, Nav, Navbar } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const CustomNavbar = () => {
   const { isDesktopOrLaptop } = useContext(AppContext);
@@ -16,7 +17,7 @@ const CustomNavbar = () => {
       }}
     >
       <Container>
-        <Navbar.Brand href="/">
+        <Navbar.Brand as={Link} to="/">
           <Image
             src={require("../../assets/images/logo.webp")}
             style={{ height: isDesktopOrLaptop ? 70 : 50 }}
@@ -28,22 +29,22 @@ const CustomNavbar = () => {
         />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link className="mx-3 poppins-bold" href="/homehealth">
+            <Nav.Link as={Link} className="mx-3 poppins-bold" to="/homehealth">
               Home Health
             </Nav.Link>
-            <Nav.Link className="mx-3 poppins-bold" href="#link">
+            <Nav.Link as={Link} className="mx-3 poppins-bold" to="#link">
               Palliative
             </Nav.Link>
-            <Nav.Link className="mx-3 poppins-bold" href="#link">
+            <Nav.Link as={Link} className="mx-3 poppins-bold" to="/bridge-program">
               Bridge Program
             </Nav.Link>
-            <Nav.Link className="mx-3 poppins-bold" href="#link">
+            <Nav.Link as={Link} className="mx-3 poppins-bold" to="/hospice">
               Hospice
             </Nav.Link>
-            <Nav.Link className="mx-3 poppins-bold" href="#link">
+            <Nav.Link as={Link} className="mx-3 poppins-bold" to="/hospice-criteria">
               Hospice Criteria
             </Nav.Link>
-            <Nav.Link className="mx-3 poppins-bold" href="#link">
+            <Nav.Link as={Link} className="mx-3 poppins-bold" to="#link">
               Career
             </Nav.Link>
           </Nav>

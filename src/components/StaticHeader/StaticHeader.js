@@ -1,11 +1,12 @@
 import React, { useContext } from "react";
 import borderImage from "../../assets/images/page-header-curv-1-1.png";
-import headerImage from "../../assets/images/background/page-header-about-1.jpg";
+
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { Image } from "react-bootstrap";
 import AppContext from "../../context/AppContext";
+import { Link } from "react-router-dom";
 
-const StaticHeader = ({ screenName }) => {
+const StaticHeader = ({ screenName, headerImage }) => {
   const { isDesktopOrLaptop } = useContext(AppContext);
 
   return (
@@ -17,19 +18,19 @@ const StaticHeader = ({ screenName }) => {
         <h1 className="baloo2-extraBold">{screenName}</h1>
         <ul className="headingList">
           <li>
-            <a href="/" className="liHome">
+            <Link to="/" className="liHome">
               Home
-            </a>
+            </Link>
           </li>
           <MdKeyboardArrowRight size={20} />
-          <li className="liScreenName">Home Health</li>
+          <li className="liScreenName">{screenName}</li>
         </ul>
       </div>
-      {isDesktopOrLaptop ? (
+      {/* {isDesktopOrLaptop ? (
         <Image className="staticHeaderBorderImage" src={borderImage} />
       ) : (
         ""
-      )}
+      )} */}
     </div>
   );
 };
