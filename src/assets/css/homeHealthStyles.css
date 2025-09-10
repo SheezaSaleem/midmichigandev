@@ -1,0 +1,40 @@
+.missionContainer {
+  margin-top: 80px;
+}
+.missionPara {
+  color: #93959e;
+  font-size: 18px;
+}
+.missionImage {
+  overflow: hidden;
+}
+.missionImg {
+  border-radius: 10px;
+}
+
+.healthCareContainer {
+  background-color: #24262b;
+  /* background-image: url(../images/resources/faq-1-1.png);
+  background-repeat: no-repeat;
+  background-position: top right; */
+  position: relative;
+  margin-top: 80;
+  margin-bottom: 80;
+}
+.healthCareTextCont {
+  color: white;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.shortHeading {
+  margin-top: 80px;
+  color: #d6575a;
+}
+.specialtiesContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}

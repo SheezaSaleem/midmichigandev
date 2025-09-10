@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../../assets/css/HomeStyles.css";
 import MasterLayout from "../../layouts/MasterLayout";
 import MySlider from "./SubScreens/MySlider";
 import CustomNavbar from "../../components/Navbar/CustomNavbar";
@@ -8,17 +9,14 @@ import Cta from "./SubScreens/Cta";
 import Testimonials from "./SubScreens/Testimonials";
 import Footer from "../../components/Footer/Footer";
 
-
 const Home = () => {
   return (
     <MasterLayout>
-      <CustomNavbar />
       <MySlider />
       <Services />
       <AboutUs />
       <Cta />
       <Testimonials />
-      <Footer />
     </MasterLayout>
   );
 };

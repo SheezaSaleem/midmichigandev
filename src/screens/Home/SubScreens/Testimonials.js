@@ -10,31 +10,19 @@ const Testimonials = () => {
   return (
     <div>
       <div
-        className="py-5 px-5"
+        className="py-5 px-5 testimonialsImage"
         style={{
           backgroundImage: `url(${backgroundImage})`,
-          backgroundPosition: "right",
-          backgroundPosition: "top",
-          backgroundSize: "cover",
-          backgroundAttachment: "fixed",
-          position: "relative",
         }}
       >
         <Row>
           <Col lg={6} sm={12}>
-            <Card
-              className="border-0"
-              style={{
-                height: isDesktopOrLaptop ? "45vh" : "45vh",
-                backgroundColor: "rgba(255, 255, 255, 1)",
-              }}
-            >
+            <Card className="border-0 testimonialCard">
               <Card.Body
                 style={{
-                  position: "relative",
                   width: isDesktopOrLaptop ? "95%" : "",
                 }}
-                className="px-5 pt-5 d-flex flex-column justify-content-center align-items-start"
+                className="px-5 pt-5 flex-column testimonialCardBody"
               >
                 {isDesktopOrLaptop ? (
                   <h1 className="baloo2-bold">
@@ -45,29 +33,28 @@ const Testimonials = () => {
                     What Our Clients Say About Mid Michigan?
                   </h4>
                 )}
-                <Card.Text className="my-3">
-                  <i>
-                    "Thank you for your support during these trying times! We
-                    are comforted knowing she is now at peace"
-                  </i>
+                <Card.Text className="my-4">
+                  {isDesktopOrLaptop ? (
+                    <h5>
+                      <i>
+                        "Thank you for your support during these trying times!
+                        We are comforted knowing she is now at peace"
+                      </i>
+                    </h5>
+                  ) : (
+                    <h6>
+                      <i>
+                        "Thank you for your support during these trying times!
+                        We are comforted knowing she is now at peace"
+                      </i>
+                    </h6>
+                  )}
                 </Card.Text>
-                <h5
-                  className="mt-3 mb-4 baloo2-bold ms-auto"
-                  style={{ color: "#D6575A" }}
-                >
+                <h5 className="mt-3 mb-4 baloo2-bold ms-auto testimonialText">
                   A Satisfied Family
                 </h5>
-                <Image
-                  src={myborderImage}
-                  style={{
-                    height: "100%",
-                    position: "absolute",
-                    width: "100%",
-                    left: 0,
-                    bottom: -30,
-                    zIndex: -10,
-                  }}
-                />
+
+                <Image src={myborderImage} className="testimonialBorderImage" />
               </Card.Body>
             </Card>
           </Col>

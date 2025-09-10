@@ -7,10 +7,10 @@ const AboutUs = () => {
   const { isDesktopOrLaptop } = useContext(AppContext);
 
   return (
-    <Container className="py-5" style={{marginTop: 120}}>
+    <Container className="py-5 aboutContainer">
       <Row>
         <Col lg={6} sm={12}>
-          <h5 className="my-3 baloo2-bold" style={{color: '#D6575A'}}>About Us</h5>
+          <h5 className="my-3 baloo2-bold aboutus">About Us</h5>
           <h1
             style={{ width: isDesktopOrLaptop ? "75%" : "100%" }}
             className="my-4 baloo2-extraBold"
@@ -18,9 +18,8 @@ const AboutUs = () => {
             Best Home Care Center with Love
           </h1>
           <p
-            className="mb-5"
+            className="mb-5 aboutPara"
             style={{
-              color: "#93959E",
               width: isDesktopOrLaptop ? "80%" : "100%",
             }}
           >
@@ -32,46 +31,34 @@ const AboutUs = () => {
 
           <Row style={{ width: isDesktopOrLaptop ? "90%" : "100%" }}>
             <Col md={6} sm={12}>
-              <p style={{ fontSize: 15 }}>
-                <FaCircleCheck
-                  color="rgba(214, 87, 90, 0.5)"
-                  style={{ marginRight: 10 }}
-                />
+              <h6>
+                <FaCircleCheck className="aboutListIcon" />
                 In-House Theater
-              </p>
+              </h6>
             </Col>
             <Col md={6} sm={12}>
-              <p style={{ fontSize: 15 }}>
-                <FaCircleCheck
-                  color="rgba(214, 87, 90, 0.5)"
-                  style={{ marginRight: 10 }}
-                />
+              <h6>
+                <FaCircleCheck className="aboutListIcon" />
                 On-Site Physician Services
-              </p>
+              </h6>
             </Col>
           </Row>
           <Row style={{ width: isDesktopOrLaptop ? "90%" : "100%" }}>
             <Col md={6} sm={12}>
-              <p style={{ fontSize: 15 }}>
-                <FaCircleCheck
-                  color="rgba(214, 87, 90, 0.5)"
-                  style={{ marginRight: 10 }}
-                />
+              <h6>
+                <FaCircleCheck className="aboutListIcon" />
                 Medication Management
-              </p>
+              </h6>
             </Col>
             <Col md={6} sm={12}>
-              <p style={{ fontSize: 15 }}>
-                <FaCircleCheck
-                  color="rgba(214, 87, 90, 0.5)"
-                  style={{ marginRight: 10 }}
-                />
-                Convenient One-Story Design
-              </p>
+              <h6>
+                <FaCircleCheck className="aboutListIcon" />
+                Convenient One-Story
+              </h6>
             </Col>
           </Row>
         </Col>
-        <Col lg={6} sm={12} style={{ overflow: "hidden" }}>
+        <Col lg={6} sm={12} className="aboutBgImage">
           <Image
             src={require("../../../assets/images/resources/about-3-1.jpg")}
             style={{ borderRadius: 10 }}

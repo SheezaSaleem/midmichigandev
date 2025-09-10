@@ -1,15 +1,185 @@
-.btn-letstalk {
-  width: "30%";
-  height: 45;
-  border-radius: "100%";
-  background-color: "#D6575A";
+.aboutContainer {
+  margin-top: 120px;
+}
+.aboutus {
+  color: #d6575a;
+}
+.aboutPara {
+  color: #93959e;
+}
+.aboutList {
+  font-size: 15px;
+}
+.aboutListIcon {
+  color: rgba(214, 87, 90, 0.5);
+  margin-right: 10px;
+}
+.aboutBgImage {
+  overflow: hidden;
 }
 
+.ctaContainer {
+  margin-top: 120px;
+  margin-bottom: 150px;
+  background-color: #5bb286;
+}
+.ctaMainComponent {
+  position: relative;
+}
+.ctaMainCompChild1 {
+  height: 130px;
+  width: 130px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.4);
+  transform: rotate(15deg);
+  align-items: center;
+  position: relative;
+}
+.ctaMainCompChild2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 130px;
+  width: 130px;
+  border-radius: 10px;
+  background-color: #fff;
+  transform: none;
+  position: absolute;
+  top: 1px;
+  font-size: 35px;
+}
+.ctaMainCompChild2TextColor1 {
+  color: #ff5e5e;
+}
+.ctaMainCompChild2TextColor2 {
+  color: #f9b73f;
+}
+.ctaMainCompChild2TextColor3 {
+  color: #6177ff;
+}
+.ctaMainCompChild2TextColor4 {
+  color: #b440ff;
+}
+.ctaMainCompText {
+  font-size: 25px;
+  color: white;
+}
+
+.sliderContainer {
+  position: relative;
+}
+.carousalContainer {
+  position: relative;
+  background-color: red;
+}
+.sliderCardContainer {
+  position: absolute;
+  bottom: -100px;
+  right: 0px;
+  z-index: 1;
+  border-bottom: 100px;
+}
+.sliderCard {
+  background-color: rgba(255, 255, 255, 1);
+  height: 35vh;
+}
+.sliderCardBody {
+  position: relative;
+}
+.sliderCardButton {
+  border-radius: 150px;
+  background-color: #d6575a;
+  border: none;
+}
 .sliderBorderImage {
-  height: "100%";
-  position: "absolute";
-  width: "100%";
-  left: 0;
-  bottom: -30;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0px;
+  bottom: -30px;
+  z-index: -10;
+}
+
+.servicesShortHeading {
+  margin-top: 300px;
+  color: #d6575a;
+}
+.serviceCardContainer {
+  width: 100%;
+}
+.serviceRotateConainer {
+  position: relative;
+}
+.servicesChild1 {
+  height: 100px;
+  width: 100px;
+  border-radius: 10px;
+  transform: rotate(15deg);
+  align-items: center;
+  position: relative;
+}
+.servicesChild2 {
+  height: 100px;
+  width: 100px;
+  border-radius: 10px;
+  transform: none;
+  position: absolute;
+  top: 1px;
+}
+.serviceParaText {
+  font-size: 15px;
+  color: #93959e;
+}
+.redCardBgColor {
+  background-color: rgba(255, 94, 94, 0.4);
+}
+.redCardColor {
+  background-color: #ff5e5e;
+}
+.yellowCardBgColor {
+  background-color: rgba(249, 183, 63, 0.4);
+}
+.yellowCardColor {
+  background-color: #f9b73f;
+}
+.blueCardBgColor {
+  background-color: rgba(97, 119, 255, 0.4);
+}
+.blueCardColor {
+  background-color: #6177ff;
+}
+.purpleCardBgColor {
+  background-color: rgba(180, 64, 255, 0.4);
+}
+.purpleCardColor {
+  background-color: #b440ff;
+}
+
+.testimonialsImage {
+  background-position: right;
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+.testimonialCard {
+  height: 45vh;
+  background-color: rgba(255, 255, 255, 1);
+}
+.testimonialCardBody {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.testimonialText {
+  color: #d6575a;
+}
+.testimonialBorderImage {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  bottom: -30px;
   z-index: -10;
 }
