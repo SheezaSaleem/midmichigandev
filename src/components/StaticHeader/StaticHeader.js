@@ -26,11 +26,11 @@ const StaticHeader = ({ screenName, headerImage }) => {
           <li className="liScreenName">{screenName}</li>
         </ul>
       </div>
-      {/* {isDesktopOrLaptop ? (
+      {isDesktopOrLaptop ? (
         <Image className="staticHeaderBorderImage" src={borderImage} />
       ) : (
         ""
-      )} */}
+      )}
     </div>
   );
 };
