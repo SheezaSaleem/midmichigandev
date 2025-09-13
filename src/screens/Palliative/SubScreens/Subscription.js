@@ -23,7 +23,7 @@ const Subscription = () => {
             }}
           >
             <h6>
-              Palliative care may be right/or you if you are experiencing pain,
+              Palliative care may be right for you if you are experiencing pain,
               facing complex medical decisions or dealing with serious illness.
             </h6>
           </Col>
