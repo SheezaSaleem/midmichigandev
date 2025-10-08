@@ -9,7 +9,7 @@ import headerImage from "../../assets/images/background/page-header-about-1.jpg"
 const HomeHealth = () => {
   return (
     <MasterLayout>
-      <StaticHeader headerImage={headerImage} screenName={"Home Health"} />
+      <StaticHeader headerImage={headerImage} screenName={"Home Health"} altText={"Doctor discussing dementia care with senior couple at home"} />
       <OurMission />
       <HealthCare />
       <Specialization />

@@ -1,7 +1,7 @@
 .footerContainer {
   position: relative;
   background-color: #1b1d21;
-  margin-top: 100px;
+  /* margin-top: 100px; */
 }
 .footerImage {
   height: 5%;
@@ -19,4 +19,29 @@
   margin-right: 10px;
   color: #ffffff;
   font-size: 24px;
+}
+.linkText {
+  text-decoration: none;
+  color: #93959e;
+  font-size: 14px;
+}
+.contactText {
+  text-decoration: none;
+  color: #93959e;
+  font-size: 14px;
+}
+.linkText:hover {
+  color: #d6575a;
+  /* text-decoration: underline; */
+}
+.footerBrandIcon {
+  color: #93959e;
+}
+.footerBrandIcon:hover {
+  color: #d6575a;
+}
+.footerLogoImage {
+  height: 150px;
+  width: 300px;
+  object-fit: contain;
 }

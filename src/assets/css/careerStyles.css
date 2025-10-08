@@ -1,0 +1,48 @@
+.iconCircle {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #5bb286;
+  border-radius: 50px;
+}
+.careerContainerImage {
+  padding-top: 40px;
+  /* padding-bottom: 40px; */
+  /* background-color: #f0f7f7; */
+  position: relative;
+  /* margin-top: 80px;
+  margin-bottom: 80px; */
+}
+.careerContainerImage::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* background-image: url(../../assets/images/background/contact-1-map-bg.png); */
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.05;
+}
+.careerInnerContainer {
+  position: relative;
+  width: 100%;
+  /* padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; */
+  color: black;
+}
+.jobHeading {
+  color: #d6575a;
+  text-align: center;
+}
+.careerPara {
+  color: #4a4b50;
+}
+.careerContainer {
+  margin-top: 80px;
+}

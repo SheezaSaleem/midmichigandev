@@ -7,8 +7,8 @@ const Subscription = () => {
   return (
     <Container>
       <Card className="palliativeInnerContainer">
-        <Image src={subscribe1} className="subscribe1" />
-        <Image src={subscribe2} className="subscribe2" />
+        <Image src={subscribe1} className="subscribe1" alt="Upper dot image for design purpose" />
+        <Image src={subscribe2} className="subscribe2" alt="Down dot image for design purpose" />
         <Row className="scubscribePara">
           <Col lg={4} sm={12}>
             <h4 className="baloo2-bold">

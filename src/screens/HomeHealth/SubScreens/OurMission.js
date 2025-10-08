@@ -10,7 +10,7 @@ const OurMission = () => {
     <Container className="py-5 missionContainer">
       <Row>
         <Col lg={6} sm={12} className="missionImage">
-          <Image src={missionImage} className="missionImg" />
+          <Image src={missionImage} className="missionImg" alt="Elderly woman comforting man showing signs of memory loss" />
         </Col>
         <Col lg={6} sm={12}>
           <h1

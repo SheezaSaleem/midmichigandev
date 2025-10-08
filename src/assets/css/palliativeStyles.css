@@ -38,40 +38,41 @@
 .aboutImgContainer {
   position: relative;
   display: inline-block;
+  /* overflow-x: hidden; */
 }
 .dot1Img {
   position: absolute;
-  bottom: 30px;
-  right: -50px;
+  /* bottom: 30px;
+  right: -50px; */
 }
 .dot2Img {
   position: absolute;
-  bottom: -60px;
-  left: 160px;
+  /* bottom: -60px;
+  left: 160px; */
 }
 .aboutImg {
-  border-radius: 10px;
+  /* border-radius: 10px; */
   position: relative;
-  z-index: 10;
+  /* z-index: 10; */
 }
 .aboutImgContent {
-  padding-left: 50px;
-  padding-right: 50px;
+  /* padding-left: 50px;
+  padding-right: 50px; */
   position: absolute;
-  bottom: -100px;
-  right: -100px;
-  width: 100%;
-  max-width: 370px;
+  top: 40%;
+  right: -10%;
+  width: 50%;
+  /* max-width: 370px; */
   background-color: #fff;
-  padding-top: 45px;
-  padding-bottom: 54px;
+  /* padding-top: 45px;
+  padding-bottom: 54px; */
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   z-index: 11;
 }
 
 .teamShortHeading {
-  margin-top: 60px;
+  margin-top: 10px;
 }
 
 .palliativeBenefitsContainer {
@@ -97,5 +98,5 @@
 }
 .serviceAreaShortHeading {
   margin-top: 30px;
-  color: #d6575a;
+  /* color: #d6575a; */
 }

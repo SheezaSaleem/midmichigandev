@@ -11,6 +11,7 @@ const Testimonials = () => {
     <div>
       <div
         className="py-5 px-5 testimonialsImage"
+        aria-label="Young caregiver assisting elderly woman in wheelchair with a laptop at home"
         style={{
           backgroundImage: `url(${backgroundImage})`,
         }}
@@ -45,7 +46,7 @@ const Testimonials = () => {
                     <h6>
                       <i>
                         "Thank you for your support during these trying times!
-                        We are comforted knowing she is now at peace"
+                        We are comforted knowing she is now at peace" ...
                       </i>
                     </h6>
                   )}
@@ -54,7 +55,7 @@ const Testimonials = () => {
                   A Satisfied Family
                 </h5>
 
-                <Image src={myborderImage} className="testimonialBorderImage" />
+                <Image src={myborderImage} className="testimonialBorderImage" alt="Testimonial border wave image" />
               </Card.Body>
             </Card>
           </Col>

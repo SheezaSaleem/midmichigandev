@@ -10,7 +10,7 @@ const AboutUs = () => {
     <Container className="py-5 aboutContainer">
       <Row>
         <Col lg={6} sm={12}>
-          <h5 className="my-3 baloo2-bold aboutus">About Us</h5>
+          {/* <h5 className="my-3 baloo2-bold aboutus">About Us</h5> */}
           <h1
             style={{ width: isDesktopOrLaptop ? "75%" : "100%" }}
             className="my-4 baloo2-extraBold"
@@ -23,23 +23,24 @@ const AboutUs = () => {
               width: isDesktopOrLaptop ? "80%" : "100%",
             }}
           >
-            Our goal each day is to ensure that our residents’ needs are not
-            only met but exceeded. To make that happen, we are committed to
-            providing an environment in which residents can enjoy a wide range
-            of amenities that allow them to feel independent.
+            Our PASSION is to empower our patients/families to live their best
+            lives in the face of very trying circumstances. Our PRESENCE is to
+            be consistent, calming and empathetic. Our PURPOSE is to selflessly
+            provide medical, emotional and spiritual care for our
+            patients/families with expertise, compassion, and professionalism.
           </p>
 
           <Row style={{ width: isDesktopOrLaptop ? "90%" : "100%" }}>
             <Col md={6} sm={12}>
               <h6>
                 <FaCircleCheck className="aboutListIcon" />
-                In-House Theater
+                Patients First Priority
               </h6>
             </Col>
             <Col md={6} sm={12}>
               <h6>
                 <FaCircleCheck className="aboutListIcon" />
-                On-Site Physician Services
+                Team-Driven Care
               </h6>
             </Col>
           </Row>
@@ -47,21 +48,22 @@ const AboutUs = () => {
             <Col md={6} sm={12}>
               <h6>
                 <FaCircleCheck className="aboutListIcon" />
-                Medication Management
+                Growth & Education
               </h6>
             </Col>
             <Col md={6} sm={12}>
               <h6>
                 <FaCircleCheck className="aboutListIcon" />
-                Convenient One-Story
+                Comprehensive Benefits
               </h6>
             </Col>
           </Row>
         </Col>
-        <Col lg={6} sm={12} className="aboutBgImage">
+        <Col lg={6} sm={12} className="aboutBgImage d-flex justify-content-center align-items-center">
           <Image
             src={require("../../../assets/images/resources/about-3-1.jpg")}
             style={{ borderRadius: 10 }}
+            alt="A female doctor or healthcare professional smiling and speaking with an older male patient "
           />
         </Col>
       </Row>

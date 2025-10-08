@@ -1,10 +1,6 @@
-import React, { useContext } from "react";
-import { Card, Col, Container, Image, Row } from "react-bootstrap";
-import { FaCircleCheck } from "react-icons/fa6";
+import { useContext } from "react";
+import { Col, Container, Image, Row } from "react-bootstrap";
 import AppContext from "../../../context/AppContext";
-import aboutImage from "../../../assets/images/resources/about-2-1.png";
-import dot1 from "../../../assets/images/shapes/about-2-dot-1.png";
-import dot2 from "../../../assets/images/shapes/about-2-dot-2.png";
 
 const About = () => {
   const { isDesktopOrLaptop } = useContext(AppContext);
@@ -13,9 +9,9 @@ const About = () => {
     <Container className="py-5 palliativeAboutContainer">
       <Row>
         <Col lg={6} sm={12}>
-          <h5 className="my-3 baloo2-bold palliativeAboutUs">
+          {/* <h5 className="my-3 baloo2-bold palliativeAboutUs">
             About Palliative
-          </h5>
+          </h5> */}
           <h1
             style={{ width: isDesktopOrLaptop ? "75%" : "100%" }}
             className="my-4 baloo2-extraBold"
@@ -129,24 +125,24 @@ const About = () => {
         </Col> */}
 
         <Col lg={6} sm={12}>
-          <div className="aboutImgContainer">
-            <Image
+          <div className="aboutImgContainer shadow">
+            {/* <Image
               src={require("../../../assets/images/shapes/about-2-dot-1.png")}
-              className="dot1Img"
+              className="img-fluid dot1Img"
               alt
             />
             <Image
               src={require("../../../assets/images/shapes/about-2-dot-2.png")}
-              className="dot2Img"
+              className="img-fluid dot2Img"
               alt
-            />
+            /> */}
             <Image
               src={require("../../../assets/images/resources/about-2-1.png")}
-              alt
-              className="aboutImg"
+              alt="Elderly woman feeling unwell in bed, professional nurse offering reassurance and support"
+              className="img-fluid aboutImg"
             />
-            <div className="aboutImgContent shadow">
-              <p>
+            <div className={isDesktopOrLaptop ? "aboutImgContent shadow" : ""}>
+              <p className="p-3">
                 We will continuously modify your care plan to meet your changing
                 needs and consult with you about key aspects of your illness
                 including symptoms and their relief, functional changes,
