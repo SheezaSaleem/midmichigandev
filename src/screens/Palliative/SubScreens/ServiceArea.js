@@ -15,15 +15,15 @@ const ServiceArea = () => {
             className="areaImg"
             height={isDesktopOrLaptop ? 500 : 400}
             width={isDesktopOrLaptop ? 500 : 400}
-            alt
+            alt="Map of Mid-Michigan region with county borders highlighted. Regional service area"
           />
         </Col>
 
         <Col lg={6} sm={12}>
-          <h5 className="baloo2-extraBold serviceAreaShortHeading">
+          {/* <h5 className="baloo2-extraBold">
             Areas of Service
-          </h5>
-          <h1 className="baloo2-extraBold">We serve the Michigan <br/> counties of</h1>
+          </h5> */}
+          <h1 className="baloo2-extraBold serviceAreaShortHeading">We serve the Michigan <br/> counties of</h1>
           <Row className="py-3">
             <Col lg={3} sm={12}>
               <ul>

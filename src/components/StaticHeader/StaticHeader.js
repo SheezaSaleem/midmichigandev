@@ -6,17 +6,18 @@ import { Image } from "react-bootstrap";
 import AppContext from "../../context/AppContext";
 import { Link } from "react-router-dom";
 
-const StaticHeader = ({ screenName, headerImage }) => {
+const StaticHeader = ({ screenName, headerImage, altText }) => {
   const { isDesktopOrLaptop } = useContext(AppContext);
 
   return (
     <div
       className="staticHeaderImage"
       style={{ backgroundImage: `url(${headerImage})` }}
+      aria-label={altText}
     >
       <div className="headingContainer">
         <h1 className="baloo2-extraBold">{screenName}</h1>
-        <ul className="headingList">
+        {/* <ul className="headingList">
           <li>
             <Link to="/" className="liHome">
               Home
@@ -24,10 +25,10 @@ const StaticHeader = ({ screenName, headerImage }) => {
           </li>
           <MdKeyboardArrowRight size={20} />
           <li className="liScreenName">{screenName}</li>
-        </ul>
+        </ul> */}
       </div>
       {isDesktopOrLaptop ? (
-        <Image className="staticHeaderBorderImage" src={borderImage} />
+        <Image className="staticHeaderBorderImage" src={borderImage} alt="Header border wave image for design purpose" />
       ) : (
         ""
       )}

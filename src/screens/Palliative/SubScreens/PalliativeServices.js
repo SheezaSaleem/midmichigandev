@@ -8,16 +8,19 @@ const PalliativeServices = () => {
 
   return (
     <div className="">
-      <h5 className="baloo2-extraBold text-center shortHeading">
+      {/* <h5 className="baloo2-extraBold text-center">
         Palliative Services
-      </h5>
-      <h1 className="baloo2-extraBold text-center">We Specialize In</h1>
+      </h5> */}
+      <h1 className="baloo2-extraBold text-center shortHeading">
+        We Specialize In
+      </h1>
 
       <div
         className="py-5 px-5 testimonialsImage"
-        style={{
+        style={{  
           backgroundImage: `url(${backgroundImage})`,
         }}
+        aria-label="Caregiver walking with elderly person in wheelchair through a grassy field at sunset. caregiver, elderly care, wheelchair support, outdoor care, end-of-life care"
       >
         <Row>
           <Col lg={4} sm={12}>

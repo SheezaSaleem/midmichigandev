@@ -18,35 +18,57 @@ const MySlider = () => {
           <Image
             src={require("../../../assets/images/main-slider/main-slider-1-1.jpg")}
             style={{ height: isDesktopOrLaptop ? "auto" : 400 }}
+            alt="Compassionate nurse providing support and companionship to an elderly woman in home care"
+          />
+        </Carousel.Item>
+        <Carousel.Item>
+          <Image
+            src={require("../../../assets/images/main-slider/main-slider-1-2.jpg")}
+            style={{ height: isDesktopOrLaptop ? "auto" : 400 }}
+            alt="Senior man offering comfort and care to his wife in a hospice home setting"
+          />
+        </Carousel.Item>
+        <Carousel.Item>
+          <Image
+            src={require("../../../assets/images/main-slider/main-slider-1-3.jpg")}
+            style={{ height: isDesktopOrLaptop ? "auto" : 400 }}
+            alt="Happy elderly couple enjoying quality time together with senior care support"
           />
         </Carousel.Item>
       </Carousel>
 
       <Row
         className="sliderCardContainer"
-        style={{ left: isDesktopOrLaptop ? 0 : 30 }}
+        style={{
+          left: isDesktopOrLaptop ? 0 : 30,
+          bottom: isDesktopOrLaptop ? -70 : -160,
+        }}
       >
-        <Col lg={5} sm={0}></Col>
-        <Col lg={7} sm={12}>
+        <Col lg={6} sm={0}></Col>
+        <Col lg={6} sm={12}>
           <Card
-            className="mr-1 border-0 sliderCard"
-            style={{
-              height: isDesktopOrLaptop ? "35vh" : "35vh",
-            }}
+            className="mr-1 border-0 sliderCard shadow"
+            style={
+              {
+                // height: isDesktopOrLaptop ? "50vh" : "40vh",
+              }
+            }
           >
             <Card.Body
-              className="px-5 pt-5 d-flex flex-column justify-content-center align-items-start sliderCardBody"
+              className="px-5 d-flex flex-column justify-content-center align-items-start sliderCardBody"
               style={{
-                width: isDesktopOrLaptop ? "75%" : "",
+                width: isDesktopOrLaptop ? "85%" : "",
               }}
             >
               {isDesktopOrLaptop ? (
                 <h1 className="baloo2-bold">
-                  Finding the Best Senior Care Services
+                  Finding the Best Senior Care Services at Mid Michigan Home,
+                  Health & Hospice
                 </h1>
               ) : (
                 <h4 className="baloo2-bold">
-                  Finding the Best Senior Care Services
+                  Finding the Best Senior Care Services at Mid Michigan Home,
+                  Health & Hospice
                 </h4>
               )}
               <Card.Text className="mb-3">
@@ -54,23 +76,34 @@ const MySlider = () => {
                 with the tools, information, and assistance they need to make
                 informed decisions.
               </Card.Text>
-              <Button
+              {/* <Button
                 style={{
                   width: isDesktopOrLaptop ? "30%" : "50%",
                   height: isDesktopOrLaptop ? 55 : 35,
                   borderRadius: 150,
                   backgroundColor: "#d6575a",
                   border: "none",
-                  display: 'flex',
-                  justifyContent: 'center',
-                  alignItems: 'center'
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
                 }}
                 href="tel:877-732-9528"
               >
                 Let's Talk
-              </Button>
+              </Button> */}
 
-              <Image className="sliderBorderImage" src={myborderImage} />
+              <a
+                style={{
+                  textDecoration: "none",
+                  marginTop: 0
+                }}
+                className="text-center thm-btn contact-one__btn"
+                href="tel:877-732-9528"
+              >
+                Let's Talk
+              </a>
+
+              {/* <Image className="sliderBorderImage" src={myborderImage} /> */}
             </Card.Body>
           </Card>
         </Col>

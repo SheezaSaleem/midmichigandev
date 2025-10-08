@@ -34,7 +34,7 @@ const HealthCare = () => {
           independence and continue to live with the quality of life that they
           are used to.
           <br />
-          <Button
+          {/* <Button
             className="ms-auto"
             style={{
               width: isDesktopOrLaptop ? "30%" : "50%",
@@ -50,7 +50,7 @@ const HealthCare = () => {
             href="tel:877-732-9528"
           >
             Call Now
-          </Button>
+          </Button> */}
         </Col>
         <Col lg={1} sm={1} />
         <Col lg={5} sm={5}>
@@ -62,6 +62,7 @@ const HealthCare = () => {
               width: isDesktopOrLaptop ? 500 : 300,
               objectFit: "contain",
             }}
+            alt="Elderly man in a wheelchair with nurse behind him, smiling and enjoying time together"
           />
         </Col>
       </Row>

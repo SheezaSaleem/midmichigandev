@@ -12,7 +12,13 @@ import ServiceArea from "./SubScreens/ServiceArea";
 const Palliative = () => {
   return (
     <MasterLayout>
-      <StaticHeader screenName={'Palliative Care'} headerImage={headerImage} />
+      <StaticHeader
+        screenName={"Palliative Care"}
+        headerImage={headerImage}
+        altText={
+          "Caregiver comforting elderly woman in bed, offering support during difficult time"
+        }
+      />
       <Subscription />
       <About />
       <OurTeam />

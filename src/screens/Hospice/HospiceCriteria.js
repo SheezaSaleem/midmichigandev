@@ -1,6 +1,6 @@
 import { FaUserNurse } from "react-icons/fa";
 import { FaUserDoctor } from "react-icons/fa6";
-import headerImage from "../../assets/images/background/hospiceCriteria.webp";
+import headerImage from "../../assets/images/background/page-header-story-1.jpg";
 import hospiceCriteriaTwo from "../../assets/images/background/hospiceCriteriaTwo.webp";
 import hospiceCriteriaThree from "../../assets/images/background/hospiceCriteriaThree.webp";
 import hospiceCriteriaFour from "../../assets/images/background/hospiceCriteriaFour.webp";
@@ -9,28 +9,38 @@ import StaticHeader from "../../components/StaticHeader/StaticHeader";
 import MasterLayout from "../../layouts/MasterLayout";
 
 import { Button, Card, Col, Container, Image, Row } from "react-bootstrap";
+import AppContext from "../../context/AppContext";
+import { useContext } from "react";
 
 const HospiceCriteria = () => {
+  const { isDesktopOrLaptop } = useContext(AppContext);
+
   return (
     <MasterLayout>
-      <StaticHeader headerImage={headerImage} screenName={"Hospice Criteria"} />
+      <StaticHeader
+        headerImage={headerImage}
+        screenName={"Hospice Criteria"}
+        altText={
+          "Healthcare professional checking blood pressure of an elderly male patient in bed. blood pressure check, elderly patient care, nurse monitoring vitals, in-bed patient check"
+        }
+      />
       <Container>
         <h1 className="baloo2-extraBold text-center mt-5">
           If any of these sound familiar, it may be appropriate to consider
-          Hospice care
+          Hospice Care
         </h1>
         <Row>
           <Col lg={4} sm={12}>
             <Card
-              style={{ height: "60vh" }}
-              className="d-flex justify-content-center shadow mt-5 serviceCardContainer"
+              // style={{ height: "60vh" }}
+              className="shadow mt-5 serviceCardContainer"
             >
-              <Card.Body className="text-center">
+              <Card.Body className="text-center redCardBgColor">
                 <Card.Title className="baloo2-bold">
                   Hospice Benefit Qualifiers
                 </Card.Title>
                 <Card.Text className="mt-3 mb-4">
-                  <ul style={{ textAlign: "left" }}>
+                  <ul style={{ textAlign: "left", fontSize: 15 }}>
                     <li>Curative treatment ending or no longer desired</li>
                     <li>Frequent trips to the ER or recent hospitalizations</li>
                     <li>Weight loss or decrease in appetite</li>
@@ -55,15 +65,18 @@ const HospiceCriteria = () => {
 
           <Col lg={4} sm={12}>
             <Card
-              style={{ height: "60vh" }}
-              className="d-flex justify-content-center shadow mt-5 serviceCardContainer"
+              // style={{ paddingBottom: 80 }}
+              className="shadow mt-5 serviceCardContainer"
             >
-              <Card.Body className="text-center">
+              <Card.Body
+                className="text-center purpleCardBgColor"
+                style={{ paddingBottom: isDesktopOrLaptop ? 105 : "" }}
+              >
                 <Card.Title className="baloo2-bold">
                   Quality of Life Concerns
                 </Card.Title>
                 <Card.Text className="mt-3 mb-4">
-                  <ul style={{ textAlign: "left" }}>
+                  <ul style={{ textAlign: "left", fontSize: 15 }}>
                     <li>Loss of functional abilities</li>
                     <li>Reduced activity tolerance</li>
                     <li>
@@ -85,15 +98,18 @@ const HospiceCriteria = () => {
 
           <Col lg={4} sm={12}>
             <Card
-              style={{ height: "60vh" }}
-              className="d-flex justify-content-center shadow mt-5 serviceCardContainer"
+              // style={{ height: "60vh" }}
+              className="shadow mt-5 serviceCardContainer"
             >
-              <Card.Body className="text-center">
+              <Card.Body
+                className="text-center blueCardBgColor"
+                style={{ paddingBottom: isDesktopOrLaptop ? 105 : "" }}
+              >
                 <Card.Title className="baloo2-bold">
                   Struggle to Manage Chronic Conditions
                 </Card.Title>
                 <Card.Text className="mt-3 mb-4">
-                  <ul style={{ textAlign: "left" }}>
+                  <ul style={{ textAlign: "left", fontSize: 15 }}>
                     <li>Loss of functional abilities</li>
                     <li>Reduced activity tolerance</li>
                     <li>
@@ -113,18 +129,17 @@ const HospiceCriteria = () => {
             </Card>
           </Col>
         </Row>
+
         <div className="d-flex justify-content-center align-items-center">
-          <Button
+          <a
             style={{
-              backgroundColor: "rgba(214, 87, 90, 1)",
-              borderRadius: 100,
-              alignSelf: "center",
+              textDecoration: "none",
             }}
-            variant="outline-light"
-            className="mt-5 p-3 text-center"
+            className="mt-5 text-center thm-btn contact-one__btn"
+            href="tel:877-732-9528"
           >
             I am considering hospice
-          </Button>
+          </a>
         </div>
 
         <h3 className="baloo2-extraBold  mt-5">
@@ -294,6 +309,7 @@ const HospiceCriteria = () => {
               style={{ width: "90%" }}
               src={hospiceCriteriaTwo}
               className="img fluid"
+              alt="Line graph showing hospital readmission rates with error bars across 30 hospitals"
             />
             <p className="poppins-regular mt-3">
               COPD is the 3rd leading cause of death by disease in the United
@@ -310,6 +326,7 @@ const HospiceCriteria = () => {
               style={{ width: "90%" }}
               src={hospiceCriteriaThree}
               className="img fluid"
+              alt="Diagram showing decline in cardiac function over time due to heart failure"
             />
             <p className="poppins-regular mt-3">
               Almost six million Americans have heart failure and more than
@@ -375,6 +392,7 @@ const HospiceCriteria = () => {
               style={{ width: "40%" }}
               src={hospiceCriteriaFour}
               className="img fluid"
+              alt="Stopwatch icon with text stating someone develops dementia every 3 seconds"
             />
             <p className="poppins-regular mt-3">
               Dementia is a leading cause of death in the United States, but is
